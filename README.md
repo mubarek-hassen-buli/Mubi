@@ -1,47 +1,72 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Portfolio
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+A modern, minimalist portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features a dynamic grainy gradient background, smooth animations, and a clean, responsive design.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
 
-# Features
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## Features
 
-# Getting Started Locally
+-   **Dynamic Background**: Custom WebGL-based grainy gradient background (`Grainient`) that adds depth and movement.
+-   **Animations**: Smooth transitions and effects using `framer-motion` and `magicui` components (BlurFade, WordRotate, ShimmerButton).
+-   **Typography**: Elegant typography with custom fonts (`Argent CF`, `Quincy CF`) loaded via `next/font/local`.
+-   **Responsive Design**: Fully responsive layout that looks great on all devices.
+-   **Dark Mode**: Built-in dark mode support (defaulting to dark theme).
+-   **Project Showcase**: Dedicated projects page and section to highlight your work.
+-   **Resume Download**: Easy access to download your resume.
 
-1. Clone this repository to your local machine:
+## Tech Stack
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+-   **Framework**: [Next.js 15](https://nextjs.org/)
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Icons**: [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
+-   **Animations**: [Framer Motion](https://www.framer.com/motion/), [Magic UI](https://magicui.design/)
+-   **Graphics**: [OGL](https://github.com/oframe/ogl) (for WebGL background)
 
-2. Move to the cloned directory
+## Getting Started
 
-   ```bash
-   cd portfolio
-   ```
+1.  **Clone the repository:**
 
-3. Install dependencies:
+    ```bash
+    git clone https://github.com/yourusername/portfolio.git
+    cd portfolio
+    ```
 
-   ```bash
-   pnpm install
-   ```
+2.  **Install dependencies:**
 
-4. Start the local Server:
+    ```bash
+    pnpm install
+    ```
 
-   ```bash
-   pnpm dev
-   ```
+3.  **Run the development server:**
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+    ```bash
+    pnpm dev
+    ```
 
-# License
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+## Customization
+
+### Personal Information
+
+Update your personal details, experience, education, and projects in `src/data/resume.tsx`. This file acts as the central data source for the website.
+
+### Styling
+
+-   **Colors**: Customize the color theme in `src/app/globals.css`.
+-   **Fonts**: Add or change fonts in `src/app/layout.tsx`.
+
+### Projects
+
+Add new projects to the `projects` array in `src/data/resume.tsx`. The images should be placed in the `public` directory.
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
