@@ -98,36 +98,36 @@ export const DATA = {
 
   work: [
     {
-      company: "TryScribe",
-      href: "https://tryscribe.com",
+      company: "StuddyBuddy",
+      href: "https://study-buddy-self-ten.vercel.app/",
       badges: [],
       location: "Remote",
       title: "Product Engineer",
-      logoUrl: "/nvidia.png",
+      logoUrl: "/studdybuddy.png",
       start: "June 2025",
       end: "Present",
       description:
         "Building tools designed to save time and reduce effort using AI.",
     },
     {
-      company: "Codiest",
+      company: "Melaverse Tech",
       badges: [],
-      href: "https://codiest.io",
+      href: "https://melaverse-tech.com/",
       location: "Remote",
       title: "Full Stack Developer",
-      logoUrl: "/splunk.svg",
+      logoUrl: "/melaverse.png",
       start: "Feb 2025",
       end: "Apr 2025",
       description:
         "Developed full-stack applications with modern web technologies.",
     },
     {
-      company: "Polymath AI",
-      href: "https://polymath.ai",
+      company: "Mager Construction",
+      href: "https://mager-build-connect.vercel.app/",
       badges: [],
       location: "Remote",
       title: "Frontend Developer",
-      logoUrl: "/lime.svg",
+      logoUrl: "/mager.png",
       start: "Jun 2024",
       end: "Aug 2024",
       description:

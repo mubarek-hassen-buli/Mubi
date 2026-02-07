@@ -69,14 +69,14 @@ export default function Page() {
                   GitHub
                 </ShimmerButton>
               </Link>
-              <Link href="/resume.pdf" target="_blank">
+              <a href="/pdf/Resume%20(2).pdf" target="_blank" download="Resume.pdf">
                 <ShimmerButton 
                   className="h-10 px-4 text-sm font-medium transition-transform active:scale-95"
                 >
                   <Icons.globe className="size-4 mr-2" />
                   Resume
                 </ShimmerButton>
-              </Link>
+              </a>
             </div>
           </BlurFade>
         </section>
@@ -95,11 +95,11 @@ export default function Page() {
                     className="flex items-center justify-between group p-3 -mx-3 hover:bg-[#111] rounded-2xl transition-all duration-300"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="size-12 rounded-xl border border-[#222] bg-[#111] p-2 flex items-center justify-center shadow-sm">
+                      <div className="size-12 rounded-xl border border-[#222] bg-[#111] flex items-center justify-center shadow-sm overflow-hidden">
                         <img
                           src={work.logoUrl}
                           alt={work.company}
-                          className="size-full object-contain"
+                          className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300"
                         />
                       </div>
                       <div className="flex flex-col">
