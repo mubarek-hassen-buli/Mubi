@@ -25,6 +25,12 @@ const argentItalic = localFont({
   display: "swap",
 });
 
+const quincyItalic = localFont({
+  src: "../../public/fonts/Fontspring-DEMO-quincycf-lightitalic.otf",
+  variable: "--font-quincy-italic",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
@@ -73,7 +79,9 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased relative",
           geist.variable,
           geistMono.variable,
-          argentItalic.variable
+          geistMono.variable,
+          argentItalic.variable,
+          quincyItalic.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">

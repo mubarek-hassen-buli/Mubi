@@ -32,7 +32,7 @@ export default function Page() {
               />
               <BlurFade delay={BLUR_FADE_DELAY * 0.5}>
                 <WordRotate
-                  className="text-xl font-medium text-muted-foreground tracking-tight"
+                  className="text-sm font-medium text-muted-foreground tracking-tight uppercase font-[family-name:var(--font-quincy-italic)]"
                   words={[
                     "full stack engineer",
                     "software developer",
