@@ -7,6 +7,7 @@ import Markdown from "react-markdown";
 import { ChevronRight } from "lucide-react";
 import { Icons } from "@/components/icons";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
+import { ProjectCard } from "@/components/project-card";
 import WordRotate from "@/components/magicui/word-rotate";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -120,46 +121,57 @@ export default function Page() {
           </div>
         </section>
 
+
+
         <section id="projects">
-          <div className="flex min-h-0 flex-col gap-y-8">
-            <BlurFade delay={BLUR_FADE_DELAY * 6}>
-              <h2 className="text-2xl font-bold tracking-tight">Projects</h2>
+          <div className="space-y-12 w-full py-12">
+            <BlurFade delay={BLUR_FADE_DELAY * 11}>
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                    My Projects
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    Check out my latest work
+                  </h2>
+                  <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    I&apos;ve worked on a variety of projects, from simple
+                    websites to complex web applications. Here are a few of my
+                    favorites.
+                  </p>
+                </div>
+              </div>
             </BlurFade>
-            <div className="flex flex-col gap-10">
-              {DATA.projects.map((project, index) => (
-                <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 7 + index * 0.05}>
-                  <Link
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+              {DATA.projects.map((project, id) => (
+                <BlurFade
+                  key={project.title}
+                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                >
+                  <ProjectCard
                     href={project.href}
-                    target="_blank"
-                    className="flex flex-col md:flex-row gap-6 group"
-                  >
-                    <div className="w-full md:w-56 aspect-[16/9] rounded-2xl overflow-hidden border border-[#222] bg-[#111] shadow-sm transform transition-all duration-500 group-hover:border-[#333]">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="size-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                    <div className="flex-1 flex flex-col justify-center gap-2">
-                      <h3 className="text-xl font-bold tracking-tight group-hover:text-primary transition-colors">{project.title}</h3>
-                      <p className="text-muted-foreground text-[15px] leading-relaxed">
-                        {project.description}
-                      </p>
-                    </div>
-                  </Link>
+                    key={project.title}
+                    title={project.title}
+                    description={project.description}
+                    dates={project.dates}
+                    tags={project.technologies}
+                    image={project.image}
+                    video={project.video}
+                    links={project.links}
+                  />
                 </BlurFade>
               ))}
-              <BlurFade delay={BLUR_FADE_DELAY * 8}>
-                <div className="flex justify-center mt-4">
-                  <Link
-                    href="#projects"
-                    className="text-muted-foreground hover:text-foreground text-[15px] font-medium transition-colors underline underline-offset-4"
-                  >
-                    View Projects
-                  </Link>
-                </div>
-              </BlurFade>
             </div>
+            <BlurFade delay={BLUR_FADE_DELAY * 15}>
+              <div className="flex justify-center mt-12 w-full">
+                <Link
+                  href="/projects"
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-8 py-2"
+                >
+                  View All Projects
+                </Link>
+              </div>
+            </BlurFade>
           </div>
         </section>
 
