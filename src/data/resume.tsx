@@ -21,7 +21,7 @@ export const DATA = {
   description:
     "Full-stack engineer building products from concept to launch.",
   summary:
-    "I'm a **full-stack engineer** who builds products from **concept to launch**. I focus on clean code, smooth interfaces, and **shipping features** that actually matter to users.\n\nI shipped [**StuddyBuddy**](https://study-buddy-self-ten.vercel.app/), an AI Buddy that helps You Study , and I'm currently building [**SQL Visualizer**](https://sqlv3.vercel.app/), an enterprise-grade engine for optimizing and debugging complex database queries.\n\nOpen to **full time** roles and **collaborations**.",
+    "I'm a **full-stack engineer** who builds products from **concept to launch**. I focus on clean code, smooth interfaces, and **shipping features** that actually matter to users.\n\nI shipped [**StudyBuddy**](https://study-buddy-self-ten.vercel.app/), an AI Buddy that helps You Study , and I'm currently building [**SQL Visualizer**](https://sqlv3.vercel.app/), an enterprise-grade engine for optimizing and debugging complex database queries.\n\nOpen to **full time** roles and **collaborations**.",
   avatarUrl: "/esc.jpg",
   skills: [
     { name: "Next.js", icon: Icons.nextjs },
