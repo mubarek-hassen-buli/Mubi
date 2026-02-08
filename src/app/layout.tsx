@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import Grainient from "@/components/Grainient";
+import ThemeBackground from "@/components/ThemeBackground";
 import "./globals.css";
 
 const geist = Geist({
@@ -87,15 +88,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>
-            <div className="fixed inset-0 -z-10 w-full h-full">
-              <Grainient
-                color1="#333333"
-                color2="#000000"
-                color3="#1a1a1a"
-                grainAmount={0.15}
-                zoom={1.2}
-              />
-            </div>
+            <ThemeBackground />
             <div className="relative z-10 max-w-2xl mx-auto pt-16 pb-24 px-6">
               {children}
             </div>

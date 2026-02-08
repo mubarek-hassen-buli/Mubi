@@ -9,6 +9,7 @@ import { Icons } from "@/components/icons";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { ProjectCard } from "@/components/project-card";
 import WordRotate from "@/components/magicui/word-rotate";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -24,13 +25,18 @@ export default function Page() {
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
-            <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-4xl font-bold tracking-tight sm:text-5xl font-[family-name:var(--font-argent-italic)]"
-                yOffset={8}
-                text={DATA.name}
-              />
+            <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left w-full">
+              <div className="flex items-center justify-between w-full">
+                <BlurFadeText
+                  delay={BLUR_FADE_DELAY}
+                  className="text-4xl font-bold tracking-tight sm:text-5xl font-[family-name:var(--font-argent-italic)]"
+                  yOffset={8}
+                  text={DATA.name}
+                />
+                <BlurFade delay={BLUR_FADE_DELAY}>
+                  <ModeToggle className="rounded-full bg-muted/50 border-border size-9" />
+                </BlurFade>
+              </div>
               <BlurFade delay={BLUR_FADE_DELAY * 0.5}>
                 <WordRotate
                   className="text-sm font-medium text-muted-foreground tracking-tight uppercase font-[family-name:var(--font-quincy-italic)]"
@@ -93,10 +99,10 @@ export default function Page() {
                   <Link
                     href={work.href}
                     target="_blank"
-                    className="flex items-center justify-between group p-3 -mx-3 hover:bg-[#111] rounded-2xl transition-all duration-300"
+                    className="flex items-center justify-between group p-3 -mx-3 hover:bg-muted/50 rounded-2xl transition-all duration-300"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="size-12 rounded-xl border border-[#222] bg-[#111] flex items-center justify-center shadow-sm overflow-hidden">
+                      <div className="size-12 rounded-xl border border-border bg-muted/30 flex items-center justify-center shadow-sm overflow-hidden">
                         <img
                           src={work.logoUrl}
                           alt={work.company}
@@ -184,7 +190,7 @@ export default function Page() {
               {DATA.skills.map((skill, id) => (
                 <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                   <ShimmerButton
-                    className="h-11 w-fit px-4 flex items-center gap-3 hover:border-[#333] hover:bg-[#161616] transition-all cursor-default shadow-sm group"
+                    className="h-11 w-fit px-4 flex items-center gap-3 hover:border-border hover:bg-muted/50 transition-all cursor-default shadow-sm group"
                   >
                     {skill.icon && <skill.icon className="size-5 transition-transform group-hover:scale-110" />}
                     <span className="text-white text-[14px] font-medium">{skill.name}</span>

@@ -94,9 +94,9 @@ export function ProjectCard({
                 onClick={(e) => e.stopPropagation()}
               >
                 <Badge
-                  className="flex items-center gap-1.5 text-xs bg-black text-white hover:bg-black/90"
-                  variant="default"
-                >
+                   className="flex items-center gap-1.5 text-[10px] bg-zinc-900 border border-white/10 dark:border-white/5 text-zinc-50 hover:bg-zinc-800 transition-colors"
+                   variant="default"
+                 >
                   {link.icon}
                   {link.type}
                 </Badge>

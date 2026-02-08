@@ -54,12 +54,6 @@
   15%, 35% {
     transform: translateZ(0) rotate(90deg);
     }
-  65%, 85% {
-    transform: translateZ(0) rotate(270deg);
-    }
-  100% {
-    transform: translateZ(0) rotate(360deg);
-    }
   }
 }
 
@@ -96,6 +90,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --shimmer-bg: oklch(0.205 0 0);
+  --skill-bg: oklch(1 0 0);
 }
 
 .dark {
@@ -130,6 +126,8 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --shimmer-bg: oklch(0.145 0 0);
+  --skill-bg: oklch(0.205 0 0);
 }
 
 @layer base {
