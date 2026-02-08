@@ -1,6 +1,8 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
 import { DATA } from "@/data/resume";
+import Link from "next/link";
+import { ChevronLeft } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -8,6 +10,15 @@ export default function ProjectsPage() {
   return (
     <section id="projects">
       <div className="space-y-12 w-full py-12">
+        <BlurFade delay={BLUR_FADE_DELAY}>
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors mb-4 group"
+          >
+            <ChevronLeft className="size-4 group-hover:-translate-x-1 transition-transform" />
+            Go Back
+          </Link>
+        </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
