@@ -312,8 +312,8 @@ export const Icons = {
       <defs>
         <linearGradient id="gemini-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" style={{ stopColor: "#4e89f8" }} />
-          <stop offset="50%" style={{ stopColor: "#f06292" }} />
-          <stop offset="100%" style={{ stopColor: "#ffca28" }} />
+          <stop offset="50%" style={{ stopColor: "#26A5E4" }} />
+          <stop offset="100%" style={{ stopColor: "#26A5E4" }} />
         </linearGradient>
       </defs>
     </svg>
