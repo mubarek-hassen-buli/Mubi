@@ -21,7 +21,7 @@ export const DATA = {
   description:
     "Full-stack engineer building products from concept to launch.",
   summary:
-    "I'm a **full-stack engineer** who builds products from **concept to launch**. I focus on clean code, smooth interfaces, and **shipping features** that actually matter to users.\n\nI shipped [**StuddyBuddy**](https://study-buddy-self-ten.vercel.app/), an AI Buddy that helps You Study , and I'm currently building **ZenShot**, a screenshot beautification tool for makers sharing their progress.\n\nOpen to **full time** roles and **collaborations**.",
+    "I'm a **full-stack engineer** who builds products from **concept to launch**. I focus on clean code, smooth interfaces, and **shipping features** that actually matter to users.\n\nI shipped [**StuddyBuddy**](https://study-buddy-self-ten.vercel.app/), an AI Buddy that helps You Study , and I'm currently building [**SQL Visualizer**](https://sqlv3.vercel.app/), an enterprise-grade engine for optimizing and debugging complex database queries.\n\nOpen to **full time** roles and **collaborations**.",
   avatarUrl: "/esc.jpg",
   skills: [
     { name: "Next.js", icon: Icons.nextjs },
@@ -170,26 +170,30 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "ZenShot",
-      href: "https://zenshot.xyz",
-      dates: "2025 - Present",
+      title: "SQL Visualizer",
+      href: "https://sqlv3.vercel.app/",
+      dates: "2024 - Present",
       active: true,
       description:
-        "A modern editor for builders to create viral visuals and share progress.",
+        "Visualize execution flows, debug complex joins, and optimize query performance with our enterprise-grade semantic analysis engine.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "TailwindCSS",
+        "TypeScript",
+        "Tailwind",
         "Framer Motion",
+        "Zustand",
+        "Neon",
+        "Drizzle",
+        "Gemini"
       ],
       links: [
         {
           type: "Website",
-          href: "https://zenshot.xyz",
+          href: "https://sqlv3.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/splunk.svg",
+      image: "/sql.png",
       video: "",
     },
     {
@@ -198,12 +202,16 @@ export const DATA = {
       dates: "2025 - Present",
       active: true,
       description:
-        "An AI assistant for studying.",
+        "Your personal AI study companion. Upload any document to instantly generate interactive flashcards, comprehensive quizzes, and concise summaries to supercharge your learning.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "TailwindCSS",
-        "OpenAI",
+        "TypeScript",
+        "Tailwind",
+        "Gemini",
+        "Elysia",
+         "Zustand",
+        "Neon",
+        "Drizzle",
       ],
       links: [
         {
@@ -216,49 +224,52 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Synote",
-      href: "https://synote.xyz",
+      title: "Readme Generator",
+      href: "https://readme-generator-sepia.vercel.app/",
       dates: "2024 - 2025",
       active: true,
       description:
-        "An AI note-taking app that generates notes and summaries using Gemini.",
+        "Stop writing boilerplate. Create professional documentation for your open-source projects instantly with our smart generator.",
       technologies: [
         "Next.js",
         "Typescript",
         "TailwindCSS",
         "Gemini",
+        "Zustand",
+        "Neon",
+        "Drizzel",
       ],
       links: [
         {
           type: "Website",
-          href: "https://synote.xyz",
+          href: "https://readme-generator-sepia.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/laurier.png",
+      image: "/Readme.png",
       video: "",
     },
     {
-      title: "Cura",
-      href: "https://cura.health",
-      dates: "2024",
+      title: "Khilafah",
+      href: "https://khalifasofislam.vercel.app/",
+      dates: "2025 - Present",
       active: true,
       description:
-        "A personal AI health assistant that offers fitness and wellness guidance.",
+        "A modern, interactive web application that explores the lives and legacies of the Four Rightly Guided Caliphs.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "TailwindCSS",
-        "FastAPI",
+        "TypeScript",
+        "Tailwind",
+        "Framer Motion",
       ],
       links: [
         {
           type: "Website",
-          href: "https://cura.health",
+          href: "https://khalifasofislam.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/ib.png",
+      image: "/khalifa.png",
       video: "",
     },
   ],
