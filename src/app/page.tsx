@@ -25,17 +25,19 @@ export default function Page() {
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
-            <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left w-full">
-              <div className="flex items-center justify-between w-full">
+            <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left w-full relative">
+              <div className="flex items-center justify-between w-full relative">
                 <BlurFadeText
                   delay={BLUR_FADE_DELAY}
                   className="text-4xl font-bold tracking-tight sm:text-5xl font-[family-name:var(--font-argent-italic)]"
                   yOffset={8}
                   text={DATA.name}
                 />
-                <BlurFade delay={BLUR_FADE_DELAY}>
-                  <ModeToggle className="rounded-full bg-muted/50 border-border size-9" />
-                </BlurFade>
+                <div className="md:relative absolute -top-8 right-0 md:top-0 md:right-0">
+                  <BlurFade delay={BLUR_FADE_DELAY}>
+                    <ModeToggle className="rounded-full bg-muted/50 border-border size-9" />
+                  </BlurFade>
+                </div>
               </div>
               <BlurFade delay={BLUR_FADE_DELAY * 0.5}>
                 <WordRotate
