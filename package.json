@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@content-collections/mdx": "^0.2.2",

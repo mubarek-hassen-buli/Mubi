@@ -17,28 +17,26 @@ export default function Page() {
   return (
     <main className="min-h-dvh flex flex-col gap-14 relative pt-0 pb-12">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div className="mx-auto w-full max-w-2xl space-y-8 relative">
+          <div className="absolute -top-4 right-0 md:top-0">
+            <BlurFade delay={BLUR_FADE_DELAY}>
+              <ModeToggle className="rounded-full bg-muted/50 border-border size-9" />
+            </BlurFade>
+          </div>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-6 pt-8 md:pt-0">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 md:size-32 rounded-2xl border shadow-xl ring-2 ring-muted bg-muted p-1">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} className="rounded-xl object-cover" />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
-            <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left w-full relative">
-              <div className="flex items-center justify-between w-full relative">
-                <BlurFadeText
-                  delay={BLUR_FADE_DELAY}
-                  className="text-4xl font-bold tracking-tight sm:text-5xl font-[family-name:var(--font-argent-italic)]"
-                  yOffset={8}
-                  text={DATA.name}
-                />
-                <div className="md:relative absolute -top-8 right-0 md:top-0 md:right-0">
-                  <BlurFade delay={BLUR_FADE_DELAY}>
-                    <ModeToggle className="rounded-full bg-muted/50 border-border size-9" />
-                  </BlurFade>
-                </div>
-              </div>
+            <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left w-full">
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-4xl font-bold tracking-tight sm:text-5xl font-[family-name:var(--font-argent-italic)]"
+                yOffset={8}
+                text={DATA.name}
+              />
               <BlurFade delay={BLUR_FADE_DELAY * 0.5}>
                 <WordRotate
                   className="text-sm font-medium text-muted-foreground tracking-tight uppercase font-[family-name:var(--font-quincy-italic)]"
